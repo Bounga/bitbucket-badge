@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../bitbucket.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Bitbucket badge</title>
+</head>
+
+<body>
+  <h1>Bitbucket Badge</h1>
+
+  <p>Demo page for MooTools Bitbucket Bagde.</p>
+
+  <div id="badge"></div>
+
+  <script>
+  window.addEvent('domready', function(){
+      var badge = new Bitbucket('badge', {
+        'user': 'Bounga'
+      });
+
+      badge.addEvent("dataLoaded", function() {
+        if (typeof(console) != "undefined") {
+          // Access info in badge object
+          console.log(this.user_info);
+          console.log(this.repositories);
+        }
+
+        // Use the default method to populate #badge div
+        this.populateDOM();
+      });
+  });
+  </script>
+</body>
+</html>

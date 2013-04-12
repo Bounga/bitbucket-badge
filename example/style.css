@@ -1,0 +1,29 @@
+body {
+  width: 300px;
+  margin: auto;
+}
+
+#badge {
+  background-color: #777;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+ul.repositories {
+  padding: 0;
+}
+
+ul.repositories li {
+  list-style-type: none;
+  height: 1.5em;
+}
+
+ul.repositories li img {
+  vertical-align: middle;
+}
+
+ul.repositories li a, ul.repositories li a:visited{
+  color: #fff;
+  text-decoration: none;
+}
