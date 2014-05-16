@@ -27,7 +27,7 @@ Usage Example
 Drop **mootools** and **bitbucket.js** in your javascripts directory and include it in your XHTML layout :
 
     <script src="javascripts/mootools.js" type="text/javascript" charset="utf-8"></script>
-    <script src="javascripts/mootools.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/bitbucket.js" type="text/javascript" charset="utf-8"></script>
 
 then you can create new Bitbucket Badge instances :
 
