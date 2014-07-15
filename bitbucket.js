@@ -11,14 +11,14 @@ var Bitbucket = new Class({
     this.attach();
   },
   attach: function() {
-    new Request.JSON({
+    new Request.JSONP({
       url: 'http://api.bitbucket.org/1.0/users/' + this.options.user + '/',
-      onSuccess: function(json) {
+      onComplete: function(json) {
         this.user_info    = json.user;
         this.repositories = json.repositories;
         this.fireEvent("dataLoaded");
       }.bind(this)
-    }).get();
+    }).send();
   },
   populateDOM: function() {
     var display_name = this.user_info.display_name;

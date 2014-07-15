@@ -1,6 +1,6 @@
 # Bitbucket Badge
 
-Bitbucket Bagde is a tiny Javascript library written in MooTools to retrieve info about a [Bitbucket](https://bitbucket.org/) user and its repositories. It requires MooTools >= 1.2.
+Bitbucket Bagde is a tiny Javascript library written in MooTools to retrieve info about a [Bitbucket](https://bitbucket.org/) user and its repositories. It requires MooTools >= 1.2 and MooTools More for JSONP.
 
 ## Features
 
@@ -12,7 +12,7 @@ Bitbucket features are:
 * Callbacks
 * Fully customizable using CSS
 * Ability to use a custom displaying function
-* Works on Safari, Firefox, IE 6/7, Chrome and Opera
+* Works on Safari, Firefox, IE 6+, Chrome and Opera
 * Open source, full code is available on BitBucket
 
 Download
@@ -24,9 +24,10 @@ Download
 Usage Example
 -------------
 
-Drop **mootools** and **bitbucket.js** in your javascripts directory and include it in your XHTML layout :
+Drop **mootools**, **mootools-more** and **bitbucket.js** in your javascripts directory and include it in your XHTML layout :
 
     <script src="javascripts/mootools.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/mootools-more.js" type="text/javascript" charset="utf-8"></script>
     <script src="javascripts/bitbucket.js" type="text/javascript" charset="utf-8"></script>
 
 then you can create new Bitbucket Badge instances :
